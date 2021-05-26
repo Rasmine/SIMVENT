@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #465e86;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SIMVENT.Controller.MainScreenCtrl">
+<children>
+      <AnchorPane layoutY="575.0" prefHeight="225.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="575.0">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="106.0" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@custom.PNG" />
+               </image>
+            </ImageView>
+            <Button alignment="BASELINE_CENTER" contentDisplay="TEXT_ONLY" disable="true" layoutX="457.0" layoutY="156.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="429.0" text="Custom patient" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="predefinedPatientButton" mnemonicParsing="false" onAction="#handlePredefinedPatientButton" prefHeight="125.0" prefWidth="429.0" text="Predefined patient case" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="141.0" fitWidth="109.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@Predefined.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <StackPane prefHeight="204.0" prefWidth="1280.0" AnchorPane.bottomAnchor="596.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#fcf9f9" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Sim-Vent!">
+               <font>
+                  <Font name="Arial Bold" size="60.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <ImageView fitHeight="57.0" fitWidth="281.0" layoutX="8.0" layoutY="12.0">
+         <image>
+            <Image url="@LOGO_SimVent.png" />
+         </image>
+      </ImageView>
+      <StackPane layoutY="122.0" prefHeight="352.0" prefWidth="1280.0" AnchorPane.bottomAnchor="326.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="122.0">
+         <children>
+            <Text fill="#fcf9f9" strokeType="OUTSIDE" strokeWidth="0.0" text="Sim-Vent is a simulation software for training in adjustment of mechanical ventilator settings. With Sim-Vent you will practice adjusting mechanical ventilator settings by trying to obtain the best possible compromise in preventing O2 toxicity, low oxygenation, acidosis and barotrauma for individual patients." textAlignment="CENTER" wrappingWidth="925.4700469970703">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <StackPane layoutY="437.0" prefHeight="212.0" prefWidth="1280.0" AnchorPane.bottomAnchor="151.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="437.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your patient">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+</children>
+</AnchorPane>
